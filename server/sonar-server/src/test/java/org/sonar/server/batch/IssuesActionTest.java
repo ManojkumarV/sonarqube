@@ -114,7 +114,6 @@ public class IssuesActionTest {
     assertThat(serverIssue.hasResolution()).isFalse();
     assertThat(serverIssue.getStatus()).isEqualTo("RESOLVED");
     assertThat(serverIssue.getSeverity()).isEqualTo(Severity.BLOCKER);
-    assertThat(serverIssue.getType()).isEqualTo(BUG.name());
     assertThat(serverIssue.getManualSeverity()).isFalse();
     assertThat(serverIssue.hasChecksum()).isFalse();
     assertThat(serverIssue.hasAssigneeLogin()).isFalse();

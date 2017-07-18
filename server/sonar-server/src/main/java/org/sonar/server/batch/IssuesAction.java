@@ -107,7 +107,6 @@ public class IssuesAction implements BatchWsAction {
     issueBuilder.setManualSeverity(issue.isManualSeverity());
     issueBuilder.setStatus(issue.status());
     setNullable(issue.resolution(), issueBuilder::setResolution);
-    issueBuilder.setType(issue.type().name());
     issueBuilder.setCreationDate(issue.creationDate().getTime());
     try {
       issueBuilder.build().writeDelimitedTo(out);

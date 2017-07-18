@@ -48,7 +48,6 @@ message ServerIssue {
     optional string checksum = 12;
     optional string assignee_login = 13;
     optional int64 creation_date = 14;
-    optional string type = 15;
 }
 
 message User {
